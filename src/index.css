@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Work Sans:wght@200;300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body,html,#root {
+    min-width: 100%;
+
+};
+body{
+    font-family: 'Work Sans', sans-serif; 
+}
+
+
+
+@layer utilities {
+	@variants responsive {
+        .girl-bag{
+            max-width: 343px;
+        }
+        .white-bag1{
+            max-width: 255px;
+        }
+        .white-bag2{
+            max-width: 300px;
+        }
+        .desktop-bag{
+            max-width: 624px;
+        }
+
+	}
+}
+/* third */
+@layer utilities{
+    @variants responsive{
+        .third-phone{
+            max-width: 164px;
+        }
+        .third-phone2{
+            max-width: 348px;
+        }
+        .third-phone3{
+            max-width: 360px;
+        }
+        @media (max-width: 372px) {
+			.xs-screen {
+				justify-content: center;
+			}}
+    }
+}
+
+/* fotter */
+@layer utilities{
+    @variants responsive{
+        .phone-fotter{
+            max-width: 21px;
+        }
+        .tablet-footer{
+            max-width: 35px;
+        }
+    }
+}
